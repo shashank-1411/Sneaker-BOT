@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "es2020": true,
+    "browser": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js",
+        "**/*.test.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    },
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "import/extensions": "off"
+      }
+    }
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "max-len": [
+      "warn",
+      {
+        "code": 150,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-console": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-await-in-loop": "off",
+    "radix": "off",
+    "no-loop-func": "off",
+    "arrow-body-style": "off",
+    "no-continue": "off",
+    "camelcase": "off",
+    "no-underscore-dangle": "off"
+  },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    }
+}
